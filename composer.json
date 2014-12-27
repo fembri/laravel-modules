@@ -1,7 +1,7 @@
 {
-    "name": "creolab/laravel-modules",
+    "name": "fembri/laravel-modules",
     "keywords": ["modules", "laravel"],
-    "description": "Application specific modules in Laravel 4",
+    "description": "Application specific modules in Laravel 4 - Forked from creolab/laravel-modules",
     "homepage": "http://creolab.hr",
     "authors": [
         {
