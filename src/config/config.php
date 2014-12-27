@@ -39,5 +39,10 @@ return array(
 	 * Debug mode
 	 */
 	'debug' => false,
-
+	
+	/**
+	 * Option 'auto' registering modules before the main routing configuration loaded, so module's routes.php may override main routes.php.
+	 * Option 'manual' provided to prevent main routes and filters overriding thus can provide accessbility for module's routes.php to get main filters.php filters by putting module's register command into App::before in filters.php.
+	 */
+	'registrationMode' => 'auto',
 );

@@ -24,8 +24,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 			// Auto scan if specified
 			$this->app['modules']->start();
 
-			// And finally register all modules
-			$this->app['modules']->register();
+			// And finally register all modules 
+			if ($this->app['config']->get('modules::registrationMode') == 'auto')
+				$this->app['modules']->register();
 		}
 		catch (\Exception $e)
 		{
